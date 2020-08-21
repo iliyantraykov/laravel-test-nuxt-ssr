@@ -1,0 +1,106 @@
+/*! purgecss start ignore */
+.sk-modal {
+  position: fixed;
+  z-index: 1500;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 !important;
+  color: $black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sk-modal__inner {
+  max-height: 100%;
+  overflow-y: auto;
+  background: $white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: .25rem;
+  animation: slide-up 0.4s ease;
+  width: 100%;
+  @at-root .sk-modal--regular-size & {
+    max-width: 27rem;
+  }
+
+  @at-root .sk-modal--small-size & {
+    max-width: 24rem;
+  }
+}
+
+.sk-modal__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calculateRem(30px);
+  color: $true-black;
+  &--no-title {
+    justify-content: flex-end;
+  }
+  h4 {
+    @include font-size(1.875rem);
+    line-height: 2.5rem;
+    font-weight: $font-weight-bold;
+    margin: 0;
+  }
+}
+
+.sk-modal__close {
+  cursor: pointer;
+  color: $pink;
+  svg,path {
+    fill: $pink; //TODO: Make classes for the icons to controll this
+  }
+}
+
+.sk-modal__foot {
+  padding: calculateRem(30px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $grey;
+  color: $black;
+  a:hover{
+    cursor: pointer;
+  }
+  span {
+    display: inline-block;
+  }
+  .btn {
+    font-weight: $font-weight-bold;
+  }
+}
+
+.sk-modal__body {
+  padding: 0 calculateRem(30px) calculateRem(30px) calculateRem(30px);
+}
+
+/*
+ * Modal animations
+ */
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*
+ * Custom error messages
+ */
+.sk-modal {
+  .errormessage {
+    color: $pink;
+  }
+}
+/*! purgecss end ignore */

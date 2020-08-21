@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="27px" viewBox="0 0 20 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>IconLocation</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Contents" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="StyleGuide" sketch:type="MSArtboardGroup" transform="translate(-727.000000, -5485.000000)" fill="#FFFFFF">
+            <path d="M742,5494.2802 C742,5491.47824 739.768512,5489.2198 737,5489.2198 C734.230821,5489.2198 732,5491.47824 732,5494.2802 C732,5497.08215 734.230821,5499.34059 737,5499.34059 C739.768512,5499.34059 742,5497.08215 742,5494.2802 M747,5495.12078 C747,5495.12078 747,5500.72536 737,5512 C727,5500.72536 727,5495.12078 727,5495.12078 C727,5489.53308 731.478986,5485 737,5485 C742.521014,5485 747,5489.53308 747,5495.12078" id="IconLocation" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

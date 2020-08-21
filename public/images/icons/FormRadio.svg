@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>FormRadio</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Contents" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="StyleGuide" sketch:type="MSArtboardGroup" transform="translate(-1248.000000, -5811.000000)">
+            <g id="FormRadio" sketch:type="MSLayerGroup" transform="translate(1246.000000, 5809.000000)">
+                <g id="radio-on" sketch:type="MSShapeGroup">
+                    <rect id="bounds" x="0" y="0" width="24" height="24"></rect>
+                    <path d="M12,2 C6.5,2 2,6.5 2,12 C2,17.5 6.5,22 12,22 C17.5,22 22,17.5 22,12 C22,6.5 17.5,2 12,2 L12,2 Z M4,12 C4,7.6 7.6,4 12,4 C16.4,4 20,7.6 20,12 C20,16.4 16.4,20 12,20 C7.6,20 4,16.4 4,12 Z" id="Shape" fill="#4A4A4A"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

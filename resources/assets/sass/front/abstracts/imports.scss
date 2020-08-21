@@ -1,0 +1,25 @@
+/*
+ * Bootstrap mixins
+ */
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+/*
+ * Bootstrap overrides
+ */
+@import 'mixins/buttons';
+@import 'mixins/badge';
+
+/*
+ * Eventlokale imports
+ */
+@import 'variables';
+//@import 'variables/vue-select';
+
+@import 'mixins/utilities';
+@import 'mixins/forms';
+@import 'mixins/colors';
+@import 'mixins/typography';
+
+@import 'functions/units';

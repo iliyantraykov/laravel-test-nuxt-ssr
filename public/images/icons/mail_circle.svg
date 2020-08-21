@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Mail Blau</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="16" height="12"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="16" height="12" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Eventlokale-Styleguide" transform="translate(-378.000000, -8442.000000)" stroke="#2A5571">
+            <g id="Mail-Blau" transform="translate(379.000000, 8443.000000)">
+                <g id="Group-36">
+                    <g id="Group-34">
+                        <path d="M28,14 C28,21.7320371 21.732073,28 14.0000802,28 C6.26808727,28 0,21.7320371 0,14 C0,6.26796285 6.26808727,0 14.0000802,0 C21.732073,0 28,6.26796285 28,14 L28,14 Z" id="Stroke-3-Copy-2" stroke-width="2"></path>
+                        <g id="Group-33" transform="translate(6.000000, 8.000000)">
+                            <use id="Rectangle-2" mask="url(#mask-2)" stroke-width="3.2" stroke-linejoin="round" xlink:href="#path-1"></use>
+                            <polyline id="Path-2" stroke-width="1.6" stroke-linejoin="round" points="1 1.03122454 8.00176754 7 15 1"></polyline>
+                            <path d="M1,10.9776611 L6.45751953,5.47967529" id="Path-3" stroke-width="1.6"></path>
+                            <path d="M14.9696045,11.0194092 L9.50366211,5.49987793" id="Path-4" stroke-width="1.6"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

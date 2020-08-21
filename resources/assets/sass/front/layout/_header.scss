@@ -1,0 +1,400 @@
+/*! purgecss start ignore */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  .sk-dropdown {
+    margin-left: 2rem;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+    &__menu {
+      background: $black;
+    }
+    &__link {
+      letter-spacing: 0.2px;
+      &:hover {
+        background: $pink;
+        color: $white;
+      }
+    }
+    &__trigger {
+      height: calculateRem(70px);
+      line-height: calculateRem(70px);
+      &:after {
+        bottom: 50%;
+        transform: translateY(.7rem);
+      }
+      &--active,
+      &:hover {
+        color: $white;
+        &:after {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+
+.main-header__inner {
+  height: calculateRem(70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  @include media-breakpoint-down(sm) {
+    justify-content: space-between;
+  }
+}
+
+.main-header__wrap {
+  position: relative;
+  z-index: 2;
+  background: $black;
+  transition: background #{$transition-standard};
+  @at-root .main-wrapper--modal-open:not(.main-wrapper--touch-device) & {
+    padding-right: calculateRem(16px); //Size of the scrollbar
+  }
+}
+
+.main-header__wrap--nav-open {
+  background: $black;
+  transition: none;
+  &:not(.main-wrapper--touch-device) {
+    padding-right: 1rem;
+  }
+  > .container {
+    position: relative;
+    z-index: 1;
+  }
+  @include media-breakpoint-down(xs) {
+    display: flex;
+  }
+}
+
+.main-header__wrap--nav-open--nav-search-active {
+  background: $black;
+}
+
+.main-header__wrap--transparent:not(.main-header__wrap--nav-open):not(.main-header__wrap--nav-search-active) {
+  background: transparent;
+  &:hover {
+    background: $black;
+  }
+}
+
+.main-header__logo {
+  height: calculateRem(31px);
+  width: calculateRem(146px);
+  display: inline-block;
+  background-image: url(#{$images-folder}/eventlokale_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  @include media-breakpoint-up(sm) {
+    //height: calculateRem(70px);
+    //width: calculateRem(200px);
+  }
+}
+
+.main-header__left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include media-breakpoint-up(sm) {
+    margin-right: auto;
+    flex: 1;
+  }
+}
+
+.main-header__right {
+  @include media-breakpoint-up(sm) {
+    margin-left: auto;
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.main-header__right__button {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  height: 1rem;
+  width: 1rem;
+  .sk-icon {
+    display: block;
+  }
+  svg {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+.main-header__right__button--search {
+  margin-right: calculateRem(8px);
+  @include media-breakpoint-up(sm) {
+    margin-right: calculateRem(12px);
+  }
+  @include media-breakpoint-up(md) {
+    margin-right: calculateRem(16px);
+  }
+  @include media-breakpoint-up(xl) {
+    margin-right: calculateRem(21px);
+  }
+}
+
+.main-header__right__button--user-modal-trigger {
+  margin-left: calculateRem(17px);
+  @include media-breakpoint-up(md) {
+    margin-left: calculateRem(16px);
+  }
+  @include media-breakpoint-up(xl) {
+    margin-left: calculateRem(29px);
+  }
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  &.main-header__right__button--active {
+    .path-2 {
+      fill: $pink;
+    }
+    .ellipse-0 {
+      fill: $pink;
+    }
+  }
+}
+
+.main-header__right__button--favourites {
+  margin-left: calculateRem(8px);
+  @include media-breakpoint-up(sm) {
+    margin-left: calculateRem(12px);
+  }
+  @include media-breakpoint-up(md) {
+    margin-left: calculateRem(32px);
+  }
+  @include media-breakpoint-up(xl) {
+    margin-left: 3.125rem;
+  }
+}
+
+.main-header__menu-toggle {
+  padding-left: 0;
+  button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  @at-root .main-header--nav-open & {
+    position: absolute;
+    z-index: 2;
+    padding: .35rem;
+    top: 0;
+    left: 0;
+    border-right: 1px solid $grey-5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calculateRem(70px);
+    button {
+      padding: 1rem;
+      @include hover-focus() {
+        svg,path {
+          fill: $pink;
+        }
+      }
+    }
+    @include media-breakpoint-down(xs) {
+      position: relative;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    margin-right: calculateRem(15px);
+  }
+}
+
+.main-header__search-input {
+  display: inline-flex;
+  justify-content: flex-end;
+  vertical-align: middle;
+  align-items: center;
+  border-right: $border-width solid transparent;
+  transition: border-color #{$transition-standard};
+  position: relative;
+  height: calculateRem(70px);
+
+  &--expanded {
+    border-color: $grey-6;
+  }
+
+  .btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .v-select {
+    position: absolute;
+    right: calculateRem(32px);
+    top: 0;
+    border-left: $border-width solid transparent;
+    background: $black;
+    height: calculateRem(70px);
+    padding-top: calculateRem(10px);
+    transition: opacity #{$transition-fast};
+    @include media-breakpoint-up(lg) {
+      position: static;
+      right: 0;
+    }
+    &--hidden {
+      visibility: hidden;
+      opacity: 0;
+    }
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+      border-color: $grey-6;
+    }
+  }
+
+  .vs__open-indicator {
+    display: none;
+  }
+
+  .vs__actions {
+    min-width: calculateRem(40px);
+    justify-content: center;
+    padding: 0;
+  }
+
+  .vs__dropdown-toggle {
+    padding: 0;
+    border: none;
+    width: 0;
+    overflow: hidden;
+    transition: width #{$transition-fast};
+  }
+
+  &--expanded .vs__dropdown-toggle {
+    width: calculateRem(210px);
+  }
+
+  .vs__clear {
+    margin-right: 0;
+    path {
+      fill: $white;
+    }
+  }
+
+  .v-select--clear-button-visible {
+    .vs__clear {
+      display: block !important;
+    }
+  }
+
+  .vs__search,
+  .vs__search:focus {
+    font-size: calculateRem(14px);
+    //width: 0;
+    width: calculateRem(170px);
+    display: none;
+    color: $white;
+    padding: 1rem 0 1rem calculateRem(24px);
+    margin: 0;
+    opacity: 0;
+    border: none;
+    line-height: 1.4;
+    transition: opacity #{$transition-fast},
+                width #{$transition-fast} #{$transition-standard-duration};
+
+    @include placeholder-color(#BDBDBD);
+
+    @at-root .main-header__search-input--expanded {
+      .vs__search,
+      .vs__search:focus {
+        //width: 10rem;
+        display: block;
+        opacity: 1;
+        transition: width #{$transition-fast},
+                    opacity #{$transition-fast} #{$transition-standard-duration};
+      }
+    }
+  }
+
+  .vs__selected {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-10px);
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+    padding: 0 0 0 calculateRem(24px);
+    border: none;
+    font-size: calculateRem(14px);
+    white-space: nowrap;
+  }
+
+  .vs__no-options {
+    text-align: left;
+    padding-left: calculateRem(24px);
+  }
+
+  .vs__dropdown-menu {
+    background: $black;
+    width: calc(100% + 2px);
+    color: #BDBDBD;
+    border-color: $grey-6;
+    left: -1px;
+    top: 100%;
+    padding: 0 0 calculateRem(15px) 0;
+  }
+
+  .vs__dropdown-option {
+    line-height: 2;
+    font-size: calculateRem(14px);
+    padding: calculateRem(3px) calculateRem(24px);
+    color: #BDBDBD;
+    &--highlight,
+    &:hover {
+      color: $white;
+      background-color: $pink;
+    }
+  }
+
+  .vs__selected-options {
+    padding: 0;
+  }
+
+  .vs__spinner {
+    border-top: 0.5em solid #9b9b9b;
+    border-right: 0.5em solid #9b9b9b;
+    border-bottom: 0.5em solid #9b9b9b;
+    border-left: 0.5em solid $white;
+    text-indent: 100px;
+    width: 3em;
+    height: 3em;
+    &:after {
+      width: 3em;
+      height: 3em;
+    }
+  }
+}
+
+.main-header__search-input__first-suggestion {
+  color: white;
+  top: 1.75rem;
+  left: 1.55rem;
+  font-size: 0.875rem;
+}
+/*! purgecss end ignore */

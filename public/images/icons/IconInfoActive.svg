@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
+	 viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+<title>IconInfoActive</title>
+<desc>Created with Sketch.</desc>
+<g id="Contents" sketch:type="MSPage">
+	<g id="StyleGuide" transform="translate(-526.000000, -5738.000000)" sketch:type="MSArtboardGroup">
+		<g id="IconInfoActive" transform="translate(526.000000, 5738.000000)" sketch:type="MSLayerGroup">
+			<g id="Oval-39" sketch:type="MSShapeGroup">
+				<path fill="#FF5A61" d="M15,29C7.28,29,1,22.72,1,15S7.28,1,15,1s14,6.28,14,14S22.72,29,15,29z"/>
+				<path fill="#FA5A60" d="M15,2c7.168,0,13,5.832,13,13s-5.832,13-13,13S2,22.168,2,15S7.832,2,15,2 M15,0C6.716,0,0,6.716,0,15
+					s6.716,15,15,15s15-6.716,15-15S23.284,0,15,0L15,0z"/>
+			</g>
+			<path id="Fill-1" sketch:type="MSShapeGroup" fill="#FFFFFF" d="M14.868,19.616c0.415-1.017,3.88-6.142,1.485-7.552
+				c-1.337-0.788-3.198-0.28-4.622,0.649l-0.097,0.885c0.841-0.28,1.702-0.28,1.96,0.387c0.629,1.622-1.524,4.461-2.112,5.949
+				c-1.597,4.033,2.236,4.5,4.97,2.838l0.104-0.957C15.07,22.21,14.009,21.724,14.868,19.616"/>
+			<path id="Fill-2" sketch:type="MSShapeGroup" fill="#FFFFFF" d="M16.445,6.625c1.061,0,1.92,0.843,1.92,1.882
+				s-0.859,1.883-1.92,1.883s-1.92-0.843-1.92-1.883S15.385,6.625,16.445,6.625"/>
+		</g>
+	</g>
+</g>
+</svg>

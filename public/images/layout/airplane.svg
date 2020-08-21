@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="30px" viewBox="-1.5 -3 30 30" enable-background="new -1.5 -3 30 30" xml:space="preserve">
+<title>Flughafen</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Eventlokale-Styleguide" transform="translate(-397.000000, -8761.000000)">
+		<g id="Flughafen" transform="translate(398.000000, 8762.000000)">
+			<g id="airplane_take_off">
+				<g id="Layer_1">
+					<path id="Shape" fill="none" stroke="#7F7F7F" stroke-width="2" d="M25.5,21.617h-26"/>
+					<path id="Shape_1_" fill="none" stroke="#7F7F7F" stroke-width="2" d="M21.561,0.621L6.356,8.646L2.257,6.81L0.5,7.754
+						l5.376,5.825l6.989-3.756l-1.413,7.748l2.547-1.092l3.849-9.335l5.6-3.009c0.972-0.522,1.336-1.731,0.814-2.702
+						C23.74,0.464,22.531,0.1,21.561,0.621L21.561,0.621z"/>
+					<polyline id="Shape_2_" fill="none" stroke="#7F7F7F" stroke-width="2" points="11.86,6.145 7.599,2.879 9.76,1.64 
+						16.678,3.333 					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

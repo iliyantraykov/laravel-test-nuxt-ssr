@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Suche</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Eventlokale-Styleguide" transform="translate(-622.000000, -8150.000000)">
+            <g id="Suche" transform="translate(618.000000, 8146.000000)">
+                <g id="Group-48">
+                    <rect id="Rectangle-4" x="0" y="0" width="33" height="33"></rect>
+                    <path d="M26.424584,13.7557463 C26.424584,17.9168099 23.0264384,21.2899692 18.834552,21.2899692 C14.6426657,21.2899692 11.2444331,17.9168099 11.2444331,13.7557463 C11.2444331,9.59468258 14.6426657,6.22152334 18.834552,6.22152334 C23.0264384,6.22152334 26.424584,9.59468258 26.424584,13.7557463 L26.424584,13.7557463 Z" id="Stroke-3" stroke="#2A5571" stroke-width="3" transform="translate(18.834509, 13.755746) rotate(-315.000000) translate(-18.834509, -13.755746) "></path>
+                    <rect id="Rectangle-755" fill="#2A5571" transform="translate(9.485934, 23.644980) rotate(-315.000000) translate(-9.485934, -23.644980) " x="7.98593421" y="17.6449799" width="3" height="12"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

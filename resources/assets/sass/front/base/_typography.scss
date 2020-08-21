@@ -1,0 +1,123 @@
+/**
+ * Typography
+ */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+  &__grey-header {
+    color: $grey-4;
+  }
+}
+
+//Responsive font-sizes
+h1, .h1 {
+  font-size: $h1-lg-font-size;
+  @include media-breakpoint-up(lg) {
+    font-size: $h1-font-size;
+  }
+}
+
+h2, .h2 {
+  font-size: $h2-font-size;
+  @include media-breakpoint-up(lg) {
+    font-size: $h2-lg-font-size;
+  }
+}
+
+h3, .h3 {
+  font-size: $h3-lg-font-size;
+  @include media-breakpoint-up(lg) {
+    font-size: $h3-font-size;
+  }
+}
+
+h4, .h4 { font-size: $h4-font-size; }
+h5, .h5 { font-size: $h5-font-size; }
+h6, .h6 { font-size: $h6-font-size; }
+
+p {
+  margin-top: 0;
+  margin-bottom: $paragraph-margin-bottom;
+  font-size: calculateRem(12px);
+
+  @include media-breakpoint-up(md) {
+    font-size: calculateRem(14px);
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: calculateRem(16px);
+  }
+}
+
+/*
+ * Transformation
+ */
+
+.text-lowercase  { text-transform: lowercase }
+.text-uppercase  { text-transform: uppercase }
+.text-capitalize { text-transform: capitalize }
+
+/*
+ * Weight and italics
+ */
+
+.font-weight-light   { font-weight: $font-weight-light !important; }
+.font-weight-lighter { font-weight: $font-weight-lighter !important; }
+.font-weight-normal  { font-weight: $font-weight-normal !important; }
+.font-weight-bold    { font-weight: $font-weight-bold !important; }
+.font-weight-bolder  { font-weight: $font-weight-bolder !important; }
+.font-italic         { font-style: italic !important; }
+
+/*
+ * Links
+ */
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  cursor: pointer;
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+
+//TODO: Create loop for filling these
+a.text-link {
+  color: $link-color;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid $link-color;
+  &:hover {
+    color: $link-hover-color;
+    border-color: $link-hover-color;
+  }
+}
+
+a.text-link-reverse {
+  color: $link-hover-color;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid $link-hover-color;
+  &:hover {
+    color: $link-color;
+    border-color: $link-color;
+  }
+}
+
+/*
+ * Responsive alignment
+ */
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .text#{$infix}-left   { text-align: left !important; }
+    .text#{$infix}-right  { text-align: right !important; }
+    .text#{$infix}-center { text-align: center !important; }
+  }
+}

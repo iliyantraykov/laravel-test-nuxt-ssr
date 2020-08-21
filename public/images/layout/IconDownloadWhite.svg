@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
+	 viewBox="-15 -14.5 50 50" enable-background="new -15 -14.5 50 50" xml:space="preserve">
+<title>IconDownload</title>
+<desc>Created with Sketch.</desc>
+<g id="Contents" sketch:type="MSPage">
+	<g id="StyleGuide" transform="translate(-646.000000, -5691.000000)" sketch:type="MSArtboardGroup">
+		<g id="IconDownload" transform="translate(646.000000, 5692.000000)" sketch:type="MSLayerGroup">
+			<path id="Fill-1" sketch:type="MSShapeGroup" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.6" d="M10.914,17.716V-0.923
+				H9.086v18.639L0.732,9.364l-1.294,1.293L10,21.216l10.565-10.561L19.27,9.362L10.914,17.716"/>
+			<path id="Fill-2" sketch:type="MSShapeGroup" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.6" d="M10-10.499
+				c-11.028,0-20,8.971-20,19.999s8.972,19.999,20,19.999c11.03,0,20-8.971,20-19.999S21.03-10.499,10-10.499L10-10.499z M10,27.671
+				c-10.019,0-18.171-8.152-18.171-18.171S-0.019-8.671,10-8.671S28.171-0.519,28.171,9.5S20.02,27.671,10,27.671L10,27.671z"/>
+		</g>
+	</g>
+</g>
+</svg>

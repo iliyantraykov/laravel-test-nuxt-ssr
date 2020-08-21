@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="30px" viewBox="-3 -3 30 30" enable-background="new -3 -3 30 30" xml:space="preserve">
+<title>Hochzeit</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Eventlokale-Styleguide" transform="translate(-936.000000, -8761.000000)">
+		<g id="Hochzeit" transform="translate(936.000000, 8762.000000)">
+			<g id="date">
+				<g id="Layer_1">
+					<path id="Shape" fill="none" stroke="#7F7F7F" stroke-width="2" d="M19,22.5v-4h4l-1.833-8.143
+						C20.799,8.814,19.525,7.5,17.5,7.5s-3.293,1.217-3.667,2.857L12,18.5h4v4"/>
+					<ellipse id="Oval" fill="none" stroke="#7F7F7F" stroke-width="2" cx="5.5" cy="2" rx="2.5" ry="2.5"/>
+					<path id="Shape_1_" fill="#7F7F7F" d="M5,22.5H3v-5.751l-2-1V10.5c0-2.206,1.794-4,4-4h1.146c1.525,0,2.896,0.847,3.578,2.211
+						l1.07,2.141l2.914,2.315l-1.43,1.392l-3.072-2.41L7.935,9.606C7.594,8.923,6.908,8.5,6.146,8.5H5c-1.103,0-2,0.897-2,2v4.014
+						l2,1V22.5L5,22.5z"/>
+					<rect id="Rectangle-path" x="6" y="15.5" fill="#7F7F7F" width="2" height="7"/>
+					<ellipse id="Oval_1_" fill="none" stroke="#7F7F7F" stroke-width="2" cx="17.5" cy="2" rx="2.5" ry="2.5"/>
+					<path id="Shape_2_" fill="none" stroke="#7F7F7F" stroke-width="2" d="M16,18.5h3"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

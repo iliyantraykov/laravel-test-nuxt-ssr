@@ -1,0 +1,272 @@
+/*
+ * Landing page - Jumbotron
+ */
+.landing-page__jumbotron {
+  //background-image: url(https://www.eventlokale.ch/storage/3527/conversions/SchlossSonnenuntergang-800.jpg);
+  //height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //padding-top: 7.5rem;
+  //padding-bottom: 15rem;
+  @include media-breakpoint-down(xs) {
+    @include orientation('landscape') {
+      padding-top: 7.5rem;
+      padding-bottom: 7.5rem;
+    }
+    @include orientation('portrait') {
+      height: calculateRem(568px);
+      height: 100vh;
+    }
+  }
+  @include media-breakpoint-up(sm) {
+    @include orientation('landscape') {
+      height: calculateRem(562px);
+    }
+    @include orientation('portrait') {
+      height: calculateRem(768px);
+      height: 100vh;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    @include orientation('landscape') {
+      height: calculateRem(630px);
+      padding-bottom: 13rem;
+      padding-top: 8rem;
+    }
+    @include orientation('portrait') {
+      height: calculateRem(1024px);
+      height: 100vh;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    @include orientation('landscape') {
+      height: calculateRem(768px);
+      height: 100vh;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+    @include orientation('portrait') {
+      height: calculateRem(1366px);
+      height: 100vh;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    height: 61rem;
+    height: 100vh;
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.landing-page__jumbotron__title {
+  font-size: 1.125rem;
+  @include media-breakpoint-up(sm) {
+    max-width: 80%;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 1.875rem;
+    max-width: 95%;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 65%;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 2.5rem;
+  }
+  font-weight: $font-weight-normal;
+}
+
+.landing-page__jumbotron__placeholder {
+  @include full-absolute-positioned();
+}
+
+.landing-page__jumbotron .tiny-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  .tiny-slider__slide__inner {
+    justify-content: flex-end;
+    align-items: flex-end;
+    @include media-breakpoint-up(md) {
+      @include orientation('landscape') {
+        padding-bottom: 4rem;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      //min-height: 48rem;
+      @include orientation('landscape') {
+        padding-bottom: 3rem;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      height: 61rem;
+      height: 100vh;
+      @include orientation('landscape') {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .tiny-slider__slide__background {
+    img {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+
+      -webkit-transition: transform 8s cubic-bezier(0.245, 1.040, 0.920, 0.960);
+      transition: transform 8s cubic-bezier(0.245, 1.040, 0.920, 0.960);
+    }
+  }
+  .tns-slide-active {
+    .tiny-slider__slide__background {
+      img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .tns-outer,
+    .tns-ovh,
+    .tns-inner,
+    .tns-slider,
+    .tiny-slider__slide,
+    .tiny-slider__slide__inner {
+      height: 100%;
+    }
+  }
+}
+
+.landing-page__jumbotron__link {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 8rem;
+  margin-bottom: 12vh;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity #{$transition-standard},
+  transform #{$transition-standard};
+  @at-root .tns-slide-active & {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .6s;
+  }
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.landing-page__jumbotron__scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 0.8125rem;
+  .sk-icon {
+    margin-bottom: 0.625rem;
+  }
+  &--small-screens {
+    transform: translateX(-50%) translateY(0) rotate(90deg);
+    transition: transform #{$transition-standard};
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+    &:hover {
+      transform: translateX(-50%) translateY(10px) rotate(90deg);
+    }
+  }
+  &--large-screens {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+}
+
+.landing-page__jumbotron__content {
+  position: relative;
+  z-index: 3;
+}
+
+/*
+ * Dropdown
+ */
+.landing-page__jumbotron__dropdown {
+  margin-top: 6.6875rem;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 5rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-top: 8.8rem;
+  }
+
+  .formulate-input-label {
+    color: $white;
+    left: 0;
+    font-size: 0.875rem;
+    @include media-breakpoint-up(md) {
+      font-size: 1.25rem;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 1.5625rem;
+    }
+  }
+
+  .formulate-input-element input[type="text"] {
+    padding-left: 0;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    font-size: calculateRem(18px);
+
+    @include media-breakpoint-up(md) {
+      font-size: calculateRem(30px);
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: calculateRem(40px);
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 0.1rem 0;
+    }
+  }
+
+  .formulate-input-wrapper {
+    padding-top: 1.7rem !important;
+    @include media-breakpoint-up(xl) {
+      padding-top: 2rem !important;
+    }
+  }
+
+  .formulate-input--location-search {
+    @include media-breakpoint-between(sm,md) {
+      max-width: 85%;
+    }
+  }
+}
+
+.landing-page__jumbotron__dropdown__btn {
+  margin-top: 2.625rem;
+  @include media-breakpoint-up(sm) {
+    margin-top: 3rem;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: calculateRem(7.5px) calculateRem(25px);
+    width: 100%;
+  }
+}

@@ -1,0 +1,151 @@
+.placeholder {
+  display: block;
+  border-radius: $border-radius-lg;
+  > span {
+    display: block;
+    border-radius: $border-radius-lg;
+  }
+}
+
+/*
+ * Headers
+ */
+.placeholder--header {
+  background-color: #d9d9d9;
+  margin-bottom: .5rem;
+}
+
+.placeholder--h1 {
+  height: $h1-font-size;
+}
+
+.placeholder--h2 {
+  height: $h2-font-size;
+}
+
+.placeholder--h3 {
+  height: $h3-font-size;
+}
+
+.placeholder--h4 {
+  height: $h4-font-size;
+}
+
+.placeholder--h5 {
+  height: $h5-font-size;
+}
+
+.placeholder--h6 {
+  height: $h6-font-size;
+}
+
+/*
+ * Paragraphs
+ */
+.placeholder--paragraph {
+  span {
+    background-color: #d9d9d9;
+    height: $line-height-lg * 1rem;
+    &:not(:last-child) {
+      margin-bottom: .5rem;
+    }
+    &:last-child:not(:first-child) {
+      width: 50%;
+    }
+  }
+}
+
+/*
+ * Tiny Slider
+ */
+.placeholder--tiny-slider-tabs {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  span {
+    width: 7rem;
+    height: 1.6rem;
+    background-color: #d9d9d9;
+    margin-right: 1rem;
+  }
+}
+
+.placeholder--tiny-slider-carousel-navigation {
+  span {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #d9d9d9;
+    &:last-child {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.placeholder--tiny-slider-slide {
+  width: 100%;
+  background-color: #d9d9d9;
+  height: 37rem;
+}
+
+/*
+ * Cards
+ */
+.placeholder--cards-type-1,
+.placeholder--cards-type-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.placeholder--cards-type-2 {
+  span {
+    background-color: #d9d9d9;
+  }
+}
+.placeholder--cards-type-2 {
+  &--3-columns {
+    span {
+      width: 30%;
+      height: 15rem;
+    }
+  }
+  &--2-columns {
+    span {
+      //width: 45%;
+      //height: 15rem;
+    }
+  }
+}
+
+.placeholder--cards-type-1 {
+  span {
+    background-color: #d9d9d9;
+  }
+}
+.placeholder--cards-type-1 {
+  &--3-columns {
+    span {
+      //width: 30%;
+      //height: 15rem;
+    }
+  }
+  &--2-columns {
+    span {
+      width: 45%;
+      height: 29rem;
+    }
+  }
+}
+
+
+/*
+ * Buttons
+ */
+.placeholder--button {
+  background-color: #d9d9d9;
+}
+.placeholder--button-small {
+  width: 12rem;
+  height: 2.5rem;
+}

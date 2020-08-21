@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
+	 viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+<title>FormCheckboxActive</title>
+<desc>Created with Sketch.</desc>
+<g id="Contents" sketch:type="MSPage">
+	<g id="StyleGuide" transform="translate(-1092.000000, -5845.000000)" sketch:type="MSArtboardGroup">
+		<g id="FormCheckboxActive" transform="translate(1089.000000, 5841.000000)" sketch:type="MSLayerGroup">
+			<rect id="bounds" y="0.514" sketch:type="MSShapeGroup" fill="none" width="24" height="24">
+			</rect>
+			<g id="Rectangle-215_1_">
+				<path fill="#4A4A4A" d="M21,22H3V4h18V22z M4.801,20.2H19.2V5.8H4.801V20.2z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

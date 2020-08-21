@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="30px" viewBox="-5 -2.5 30 30" enable-background="new -5 -2.5 30 30" xml:space="preserve">
+<title>Bahn</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Eventlokale-Styleguide" transform="translate(-937.000000, -8687.000000)">
+		<g id="Bahn" transform="translate(938.000000, 8688.000000)">
+			<g id="city_railway_station">
+				<g id="Layer_1">
+					<ellipse id="Oval" fill="#7F7F7F" cx="13.5" cy="16" rx="1.5" ry="1.5"/>
+					<ellipse id="Oval_1_" fill="#7F7F7F" cx="4.5" cy="16" rx="1.5" ry="1.5"/>
+					<path id="Shape" fill="none" stroke="#7F7F7F" stroke-width="2" d="M0,5.5h18"/>
+					<path id="Shape_1_" fill="none" stroke="#7F7F7F" stroke-width="2" d="M0,12.5h18"/>
+					<polygon id="Shape_2_" fill="#7F7F7F" points="15,19.5 12.648,19.5 15.648,23.5 18,23.5 					"/>
+					<polygon id="Shape_3_" fill="#7F7F7F" points="3,19.5 5.351,19.5 2.351,23.5 0,23.5 					"/>
+					<path id="Shape_4_" fill="none" stroke="#7F7F7F" stroke-width="2" d="M14,1.5h-1l0,0c0-1.105-0.895-2-2-2H7
+						c-1.105,0-2,0.895-2,2l0,0H4c-2.209,0-4,1.791-4,4v10c0,2.761,2.239,5,5,5h8c2.762,0,5-2.239,5-5v-10
+						C18,3.291,16.209,1.5,14,1.5L14,1.5z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

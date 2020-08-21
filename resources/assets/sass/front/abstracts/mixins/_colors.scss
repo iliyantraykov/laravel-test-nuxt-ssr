@@ -1,0 +1,9 @@
+@mixin pink-gradient-background() {
+  background: $pink;
+  @include gradient-directional($pink,#E86C60,345.46deg);
+}
+
+@mixin dark-grey-gradient-background() {
+  background: $dark-grey-2;
+  @include gradient-directional($dark-grey-2,rgba(98, 98, 98, 0),157.07deg);
+}

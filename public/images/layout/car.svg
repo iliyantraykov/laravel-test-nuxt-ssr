@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="30px" viewBox="1 -6 30 30" enable-background="new 1 -6 30 30" xml:space="preserve">
+<title>Auto</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Eventlokale-Styleguide" transform="translate(-991.000000, -8691.000000)">
+		<g id="Auto" transform="translate(992.000000, 8692.000000)">
+			<g id="sedan">
+				<g id="Layer_1">
+					<ellipse id="Oval" fill="none" stroke="#7F7F7F" stroke-width="2" cx="23.4" cy="12.667" rx="2.8" ry="2.8"/>
+					<ellipse id="Oval_1_" fill="none" stroke="#7F7F7F" stroke-width="2" cx="6.6" cy="12.667" rx="2.8" ry="2.8"/>
+					<path id="Shape" fill="none" stroke="#7F7F7F" stroke-width="2" d="M26.199,12.666h1.867c0.516,0,0.934-0.417,0.934-0.934
+						V8.525c0-0.858-0.584-1.604-1.414-1.812L21.533,5.2l-1.712-2.854c-0.677-1.125-1.89-1.813-3.202-1.813H9.647
+						c-1.312,0-2.527,0.688-3.201,1.813L4.733,5.2L2.415,5.779C1.583,5.987,1,6.735,1,7.591v4.141c0,0.517,0.417,0.934,0.934,0.934
+						H3.8"/>
+					<path id="Shape_1_" fill="none" stroke="#7F7F7F" stroke-width="2" d="M9.4,12.666H20.6"/>
+					<path id="Shape_2_" fill="none" stroke="#7F7F7F" stroke-width="2" d="M21.533,5.2h-16.8"/>
+					<path id="Shape_3_" fill="none" stroke="#7F7F7F" stroke-width="2" d="M13.134,5.2V0.533"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

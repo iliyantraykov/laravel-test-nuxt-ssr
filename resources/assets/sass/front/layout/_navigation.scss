@@ -1,0 +1,164 @@
+.main-nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  transition: top #{$transition-standard};
+  overflow-y: auto;
+
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: space-between;
+  padding-top: 4.4rem;
+  .tiny-slider {
+    padding-top: 1.5rem;
+    @include media-breakpoint-up(md) {
+      padding-top: calculateRem(90px);
+    }
+    @include media-breakpoint-up(xl) {
+      padding-top: calculateRem(120px);
+    }
+  }
+
+  //@at-root .main-header--nav-open & {
+  //  top: 0;
+  //}
+}
+
+.main-nav__footer {
+  padding: calculateRem(20px) calculateRem(30px);
+  font-size: calculateRem(15px);
+  background-color: $grey;
+  text-align: left;
+  color: $dark-grey;
+  @include media-breakpoint-up(md) {
+    padding: calculateRem(28px);
+    font-size: calculateRem(16px);
+    text-align: center;
+  }
+}
+
+.main-nav__footer__text {
+  display: block;
+  margin-bottom: calculateRem(8px);
+  @include media-breakpoint-up(md) {
+    display: inline-block;
+    margin-right: calculateRem(12px);
+    margin-bottom: 0;
+  }
+}
+
+.main-nav__link {
+  display: inline-block;
+  color: $pink;
+  text-decoration: underline;
+  &:hover {
+    color: $black;
+  }
+}
+
+.main-nav__content {
+  //flex: 1;
+  //overflow-y: auto;
+  padding-bottom: calculateRem(80px);
+
+  //TODO: Find a better way to get the effect from the designs
+  overflow-x: hidden;
+  .tns-ovh {
+    overflow: visible;
+  }
+}
+
+.main-nav__list-title {
+  color: $black;
+  margin-top: calculateRem(48px);
+  font-size: calculateRem(16px);
+  @include media-breakpoint-up(md) {
+    font-size: calculateRem(32px);
+    margin-top: calculateRem(165px);
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: calculateRem(40px);
+    margin-top: calculateRem(128px);
+  }
+}
+
+.main-nav__list {
+  @include reset-ul();
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 12rem;
+  }
+}
+
+.main-nav__list__item {
+  width: 85%;
+  border-bottom: 1px solid $grey;
+  &:nth-child(-n+3) {
+    border-top: 1px solid $grey;
+  }
+  a {
+    display: block;
+    color: $black;
+    font-size: calculateRem(14px);
+    line-height: calculateRem(35px);
+    font-weight: $font-weight-normal;
+    padding: calculateRem(2px) 0;
+    @include media-breakpoint-up(md) {
+      font-size: calculateRem(24px);
+      font-weight: $font-weight-bold;
+      padding: calculateRem(14px) 0;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: calculateRem(30px);
+      padding: calculateRem(22px) 0;
+    }
+  }
+}
+
+/*
+ * Animation styles
+ */
+
+.main-nav__content {
+  @at-root .slide-fade-enter-active & {
+    overflow-y: hidden;
+    padding-right: 1rem;
+  }
+}
+
+/*
+ * Tiny slider overrides
+ */
+.main-nav__content {
+  .tiny-slider__header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tiny-slider__title {
+    //font-size: $h1-lg-font-size;
+    text-shadow: none !important;
+    @include media-breakpoint-up(lg) {
+      //font-size: $h1-font-size;
+    }
+    .badge {
+      background-color: $pink;
+      color: $white;
+    }
+  }
+  .tiny-slider__subtitle {
+    line-height: 1.3125rem;
+    font-weight: $font-weight-bold;
+    @include media-breakpoint-up(xl) {
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Ganze Schweiz</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Eventlokale-Styleguide" transform="translate(-459.000000, -8687.000000)">
+            <g id="Ganze-Schweiz" transform="translate(459.000000, 8688.000000)">
+                <g id="map_marker">
+                    <g id="Layer_1">
+                        <path d="M23,5 C23,7.761 18,15 18,15 C18,15 13,7.761 13,5 C13,2.239 15.239,0 18,0 C20.761,0 23,2.239 23,5 L23,5 Z" id="Shape" stroke="#606060" stroke-width="2"></path>
+                        <ellipse id="Oval" fill="#606060" cx="18" cy="5" rx="1.5" ry="1.5"></ellipse>
+                        <path d="M8,19 L8,2" id="Shape" stroke="#606060" stroke-width="2"></path>
+                        <path d="M22,14.384 L22,18.341 L17,20.484 L17,18.831 L15.531,16.705 C15.374,16.477 15.192,16.209 15,15.922 L15,20.557 L7.976,17.923 L2,20.483 L2,5.659 L8.024,3.077 L10.092,3.852 C10.19,3.176 10.364,2.525 10.62,1.914 L7.975,0.922 L0,4.341 L0,23.517 L8.024,20.078 L16.024,23.078 L24,19.659 L24,10.925 C23.363,12.147 22.656,13.342 22,14.384 L22,14.384 Z" id="Shape" fill="#606060"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

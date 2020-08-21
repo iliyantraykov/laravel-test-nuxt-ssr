@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="30px" viewBox="-3 -3 30 30" enable-background="new -3 -3 30 30" xml:space="preserve">
+<title>Burg</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Eventlokale-Styleguide" transform="translate(-583.000000, -8761.000000)">
+		<g id="Burg" transform="translate(584.000000, 8763.000000)">
+			<g id="palace">
+				<g id="Layer_1">
+					<polyline id="Shape" fill="none" stroke="#7F7F7F" stroke-width="2" points="15,10.5 15,4.5 11,-0.5 7,4.5 7,10.5 					"/>
+					<path id="Shape_1_" fill="none" stroke="#7F7F7F" stroke-width="2" d="M20,3.5l-2,3v4H4v-4l-2-3l-2,3v14h8v-3
+						c0-1.657,1.343-3,3-3l0,0c1.657,0,3,1.343,3,3v3h8v-14L20,3.5L20,3.5z"/>
+					<path id="Shape_2_" fill="#7F7F7F" d="M12,10.5h-2v-3c0-0.552,0.448-1,1-1l0,0c0.553,0,1,0.448,1,1V10.5L12,10.5z"/>
+					<rect id="Rectangle-path" x="17" y="14.5" fill="#7F7F7F" width="2" height="3"/>
+					<rect id="Rectangle-path_1_" x="3" y="14.5" fill="#7F7F7F" width="2" height="3"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,62 @@
+/* Mixins */
+@mixin full-absolute-positioned {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin placeholder-animation($elemWidth:1300,$durationPerSlide:1.7) {
+  animation-duration: #{$durationPerSlide}s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: placeholderAnimate;
+  background: #f6f7f8; // Fallback
+  background: linear-gradient(to right, #F2F2F2 2%, #E8E8E8 18%, #F2F2F3 70%);
+  background-size: #{$elemWidth}px; // Animation Area
+
+  @keyframes placeholderAnimate {
+    0%{ background-position: -#{$elemWidth / 2}px 0; }
+    100%{ background-position: #{$elemWidth / 2}px 0; }
+  }
+}
+
+@mixin flex-vertical-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@mixin disableSelection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin pseudoElemClearer {
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}
+
+.preloader{
+  width: 100%;
+  height: 100%;
+  top:0px;
+  position: fixed;
+  z-index: 99999;
+  background: #fff;
+  .cssload-speeding-wheel{
+    position: absolute;
+    top: calc(50% - 3.5px);
+    left: calc(50% - 3.5px);
+  }
+}

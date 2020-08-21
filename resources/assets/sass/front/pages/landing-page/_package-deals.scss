@@ -1,0 +1,35 @@
+/*
+ * Package deals
+ */
+.landing-page__package-deals {
+  @include pink-gradient-background();
+
+  padding-top: calculateRem(80px);
+  padding-bottom: calculateRem(40px);
+  min-height: calculateRem(523px);
+
+  .tiny-slider__footer {
+    display: none;
+  }
+
+  @include media-breakpoint-up(sm) {
+    min-height: calculateRem(500px);
+    padding-top: calculateRem(56px);
+  }
+
+  @include media-breakpoint-up(md) {
+    min-height: calculateRem(650px);
+    padding-bottom: calculateRem(135px);
+    padding-top: calculateRem(70px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-height: calculateRem(770px);
+  }
+
+  //TODO: Find a better way to get the effect from the designs
+  overflow: hidden;
+  .tns-ovh {
+    overflow: visible;
+  }
+}

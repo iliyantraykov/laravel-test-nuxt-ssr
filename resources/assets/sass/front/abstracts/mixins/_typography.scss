@@ -1,0 +1,11 @@
+@mixin link-with-border-bottom($color:$white,$hover-color:$link-hover-color) {
+  color: $color;
+  border-bottom: 1px solid $color;
+  padding-bottom: 1px;
+  text-decoration: none;
+  @include hover-focus-active() {
+    color: $hover-color;
+    text-decoration: none;
+    border-bottom-color: $hover-color;
+  }
+}

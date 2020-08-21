@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+<title>Personen</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Eventlokale-Styleguide" transform="translate(-519.000000, -8690.000000)">
+		<g id="Personen" transform="translate(520.000000, 8691.000000)">
+			<g id="family">
+				<g id="Layer_1">
+					<ellipse id="Oval" fill="none" stroke="#7F7F7F" stroke-width="2" cx="7" cy="8.5" rx="4" ry="4"/>
+					<ellipse id="Oval_1_" fill="none" stroke="#7F7F7F" stroke-width="2" cx="21" cy="8.5" rx="4" ry="4"/>
+					<path id="Shape" fill="none" stroke="#7F7F7F" stroke-width="2" d="M10,23.5L10,23.5c0-2.2,1.8-4,4-4l0,0c2.2,0,4,1.8,4,4"/>
+					<path id="Shape_1_" fill="none" stroke="#7F7F7F" stroke-width="2" d="M27,18.5c0-3.3-2.7-6-6-6c-1.9,0-3.5,0.8-4.6,2.2"/>
+					<path id="Shape_2_" fill="none" stroke="#7F7F7F" stroke-width="2" d="M11.6,14.7c-1.1-1.4-2.7-2.2-4.6-2.2c-3.3,0-6,2.7-6,6"
+						/>
+					<ellipse id="Oval_2_" fill="none" stroke="#7F7F7F" stroke-width="2" cx="14" cy="16.5" rx="3" ry="3"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

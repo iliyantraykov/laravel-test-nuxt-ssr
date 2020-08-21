@@ -1,0 +1,303 @@
+.el-card {
+  color: $white;
+}
+.el-card__link {
+  color: $white;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+.el-card__image {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  img {
+    position: absolute;
+    min-height: 1000%;
+    min-width: 1000%;
+    top: 50%;
+    left: 50%;
+    -webkit-backface-visibility: hidden;
+    transform: translateX(-50%) translateY(-50%) scale(0.1);
+  }
+  //TODO: Repalce blurry image with placeholder to avoid this hack
+  img:not(.loaded) {
+    width: 150%;
+    height: 150%;
+  }
+}
+.el-card__image__inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  transform: translateZ(0) scale(1.0, 1.0);
+}
+.el-card__title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.el-card__category {
+  position: absolute;
+  bottom: 100%;
+}
+.el-card__category-text {
+  position: relative;
+  display: inline-block;
+  background-color: $el-card-category-bg;
+  padding: 0 calculateRem(8px);
+
+  font-weight: $font-weight-bold;
+  font-size: calculateRem(12px);
+  line-height: calculateRem(24px);
+  top: calculateRem(12px);
+
+  @include media-breakpoint-up(md) {
+    font-weight: $font-weight-normal;
+    font-size: calculateRem(14px);
+    line-height: 130%;
+    top: calculateRem(22px);  //Font size + Padding top
+    padding: calculateRem(8px) calculateRem(16px);
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: calculateRem(15px);
+    line-height: calculateRem(25px);
+    top: calculateRem(23px); //Font size + Padding top
+    font-weight: $font-weight-bold;
+  }
+}
+.el-card__description {
+  position: relative;
+  width: 88%;
+  background-color: $el-card-description-bg;
+  padding: calculateRem(24px) calculateRem(24px) calculateRem(16px);
+  @include media-breakpoint-up(md) {
+    padding: calculateRem(24px) calculateRem(32px) calculateRem(20px);
+  }
+  @include media-breakpoint-up(lg) {
+    padding: calculateRem(40px) calculateRem(48px);
+  }
+  @include media-breakpoint-up(xl) {
+    padding: calculateRem(36px) calculateRem(40px) calculateRem(28px);
+    width: 79%;
+  }
+}
+.el-card__title-text {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+.el-card__next-btn {
+  svg {
+    width: calculateRem(16px);
+    height: calculateRem(16px);
+    @include media-breakpoint-up(md) {
+      width: calculateRem(24px);
+      height: calculateRem(24px);
+    }
+    @include media-breakpoint-up(lg) {
+      width: calculateRem(28px);
+      height: calculateRem(28px);
+    }
+  }
+}
+.el-card__subtitle-text {}
+/*
+ * Type 1
+ */
+
+.el-card--type-1 {
+  .el-card__title-text {
+
+    min-height: calculateRem(28px);
+    font-size: calculateRem(14px);
+    line-height: 130%;
+
+    @include media-breakpoint-up(md) {
+      min-height: calculateRem(40px);
+      font-size: calculateRem(20px);
+      line-height: 130%;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: calculateRem(60px);
+      font-size: calculateRem(30px);
+      line-height: calculateRem(36px);
+    }
+  }
+  .el-card__title-text__subtitle {
+    font-weight: $font-weight-light;
+    display: block;
+  }
+  .el-card__image__inner {
+    transition: transform #{$transition-slow};
+    @at-root .el-card--type-1:hover .el-card__image__inner {
+      -webkit-transform: translateZ(0) scale(1.03, 1.03);
+      transform: translateZ(0) scale(1.03, 1.03);
+    }
+  }
+  .el-card__image {
+    height: 10rem;
+    @include media-breakpoint-up(md) {
+      height: calculateRem(217px);
+    }
+    @include media-breakpoint-up(lg) {
+      height: 20rem;
+    }
+    @include media-breakpoint-up(xl) {
+      height: 25rem;
+    }
+  }
+  .el-card__description {
+    top: calculateRem(-30px);
+    margin-bottom: calculateRem(-30px);
+    @include media-breakpoint-up(sm) {
+      top: calculateRem(-30px);
+      margin-bottom: calculateRem(-30px);
+    }
+    @include media-breakpoint-up(lg) {
+      top: calculateRem(-45px);
+      margin-bottom: calculateRem(-45px);
+    }
+  }
+}
+
+
+/*
+ * Type 2
+ */
+.el-card--type-2 {
+
+  position: relative;
+  //padding-top: 69%;
+  margin-bottom: 3rem;
+  height: calculateRem(170px);
+  @include media-breakpoint-up(md) {
+    height: calculateRem(206px);
+  }
+  @include media-breakpoint-up(lg) {
+    height: calculateRem(300px);
+  }
+  @include media-breakpoint-up(xl) {
+    height: calculateRem(250px);
+  }
+
+  .el-card__title-text {
+    transition: all #{$transition-standard};
+    font-size: calculateRem(14px);
+    @at-root .el-card--type-2:hover .el-card__title-text {
+      font-size: calculateRem(20px);
+    }
+    @include media-breakpoint-up(md) {
+      font-size: calculateRem(16px);
+      @at-root .el-card--type-2:hover .el-card__title-text {
+        font-size: calculateRem(30px);
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: calculateRem(22px);
+    }
+  }
+
+  .el-card__image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: calculateRem(170px);
+    transition: height #{$transition-standard},
+                width #{$transition-standard},
+                max-width #{$transition-standard};
+    @at-root .el-card--type-2:hover .el-card__image {
+      height: calculateRem(180px);
+      width: 103%;
+    }
+    @include media-breakpoint-up(md) {
+      height: calculateRem(206px);
+      @at-root .el-card--type-2:hover .el-card__image {
+        height: calculateRem(216px);
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      height: calculateRem(300px);
+      @at-root .el-card--type-2:hover .el-card__image {
+        height: calculateRem(310px);
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      height: calculateRem(250px);
+      @at-root .el-card--type-2:hover .el-card__image {
+        height: calculateRem(260px);
+      }
+    }
+  }
+
+  .el-card__category {
+    display: none;
+  }
+
+  .el-card__description {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 80%;
+    transition: width #{$transition-standard};
+    @at-root .el-card--type-2:hover .el-card__description {
+      width: 90%;
+    }
+  }
+
+  .el-card__subtitle-text {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    font-size: $el-card-subtitle-font-size;
+    transition: max-height #{$transition-fast} #{$transition-fast-duration},
+                opacity #{$transition-fast};
+    @at-root .el-card--type-2:hover .el-card__subtitle-text {
+      max-height: 2rem;
+      opacity: 1;
+      transition: max-height #{$transition-fast},
+                  opacity #{$transition-fast} #{$transition-fast-duration};
+    }
+  }
+
+  .el-card__next-btn {
+    opacity: 0;
+    transform: translateX(-2rem);
+    transition: transform #{$transition-fast},
+                opacity #{$transition-fast};
+    @at-root .el-card--type-2:hover .el-card__next-btn {
+      opacity: 1;
+      transform: translateX(0);
+      transition: transform #{$transition-fast},
+                  opacity #{$transition-fast};
+    }
+  }
+}
+
+/*
+ * Cards in tiny slider
+ */
+.tiny-slider {
+  .el-card--type-2 {
+    .tiny-slider__link {
+      display: block;
+      height: 100%;
+      position: relative;
+    }
+    .el-card__image {
+      //TODO: Try this kind of tehnique to get the desired effect , the last item to stick to the right border of the container
+      width: 100%;
+      //max-width: calc( 100% - 30px );
+      @at-root .tiny-slider .el-card--type-2:hover .el-card__image {
+        width: 103%;
+        //max-width: calc( 103% - 30px );
+      }
+    }
+  }
+}
